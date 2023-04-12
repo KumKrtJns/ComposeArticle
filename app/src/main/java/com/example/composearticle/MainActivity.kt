@@ -77,6 +77,9 @@ fun ComposeArticleWithText(title:String, shrtDes:String, LngDes:String,modifier:
 @Composable
 fun ComposeArticlePreview() {
     ComposeArticleTheme {
-        ComposeArticleWithImage("Android", "kumar","kumar" )
+        Surface {
+            ComposeArticleWithImage(getString(R.string.title),getString(R.string.shrtDes),getString(
+                R.string.LngDes))
+        }
     }
 }
